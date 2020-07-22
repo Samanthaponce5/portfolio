@@ -1,11 +1,26 @@
 import React, { useEffect, useRef } from 'react';
 import './App.css';
-
+import { TweenMax, Power2, TimelineLite, TweenLite,TimelineMax } from "gsap";
+import pic from './images/nature-1.jpg'
+import hamburger from './images/iconfinder_menu-alt_134216.svg'
 
 
 function App() {
 
+let hero = useRef(null)
+let slider= useRef(null)
+let logo =useRef(null)
+let headline=useRef(null)
+const t1 = new TimelineMax()
+useEffect(()=>{
+  t1.fromTo(hero,1.5 ,{height:"0%"}, {height:"80%", ease:Power2.easeInOut}
+  ).fromTo(hero,1.2,{width:'100%'},{width:'80%', ease:Power2.easeInOut}
+  ).fromTo(slider,1.2,{x:'-100%'},{x:'0%',ease:Power2.easeInOut},
+  '-=1.6')
+  .fromTo(logo, 0.5,{opacity:0,x:30},{opacity:1,x:0},'-=0.5')
+  .fromTo(headline, 0.5,{opacity:0,x:10},{opacity:1,x:0},'-=1')
 
+},[])
 
   return (
    <header>
