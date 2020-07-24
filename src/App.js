@@ -1,28 +1,17 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef} from 'react';
 import './App.css';
-import { TweenMax, Power2, TimelineLite, TweenLite,TimelineMax } from "gsap";
-import pic from './images/nature-1.jpg'
-import { GrLinkedinOption } from 'react-icons/gr';
-import { FiInstagram } from 'react-icons/fi';
-import { FaGithubAlt } from 'react-icons/fa';
-import { logDOM } from '@testing-library/react';
+import {  Power2, TimelineMax } from "gsap";
+import Email from './components/Email';
+import Projects from './components/Projects';
+import About from './About';
+import Navbar from './components/Navbar';
 
 
 
 function App() {
 
-  const [addClass, setClass]=useState(false)
- 
-let toggle=()=>{
-    setClass(!addClass)
-}
-let changeClass = ['navbar']
-if(addClass){
-    changeClass.push('change')
-}
 let hero = useRef(null)
-let navbar = useRef(null)
-let navbar2 = useRef(null)
+
 let slider= useRef(null)
 let hi=useRef(null)
 let name= useRef(null)
@@ -36,15 +25,13 @@ for(let i = 0; i<logo.length;i++){
   console.log(`letter ${i} is ${logo[i].getTotalLength()}`)
 }
 
-  setClass(!addClass)
   t1.fromTo(hero,1.5 ,{height:"0%"}, {height:"550px", ease:Power2.easeInOut}
   ).fromTo(hero,1.2,{width:'100%'},{width:'50%', ease:Power2.easeInOut}
   ).fromTo(hero,1.2,{left:'0%'},{left:'-20%', ease:Power2.easeInOut}
   )
   .fromTo(slider,1.2,{x:'100%'},{x:'0%',ease:Power2.easeInOut},
   '-=1.6')
-  .fromTo(navbar, 0.5,{opacity:0,x:30},{opacity:1,x:0},'-=0.5')
-  .fromTo(navbar2, 0.5,{opacity:0},{opacity:1},'-=0.5')
+
 
   .fromTo(hi, 0.2,{opacity:0,x:10},{opacity:1,x:0},'-=1')
   .fromTo(name, 0.2,{opacity:0,x:10},{opacity:1,x:0},'-=1')
@@ -58,30 +45,7 @@ for(let i = 0; i<logo.length;i++){
   return (
    <header>
    
-
-<nav ref={el =>navbar2=el}  className={changeClass.join(' ')} >
-  <div className='hamburger-menu' onClick={toggle}>
-    <div className='line line-1'></div>
-     <div className='line line-2'></div>
-     <div className='line line-3'></div>
-  </div>
-
-    <ul className="nav-list" ref={el =>navbar=el}>
-      <li className='nav-item'><a href='#home' className='nav-link'>Home</a></li>
-      <li className='nav-item'><a href='#projects' className='nav-link'>Projects</a></li>
-      <li className='nav-item'><a href='#about' className='nav-link'>About</a></li>
-      <li><a href='#contact' className='nav-link'>Contact</a></li>
-    </ul>
-
-
-    <ul className="nav-listtwo" ref={el =>navbar2=el}>
-    <li className='nav-item two'><a href='https://www.linkedin.com/in/samantha-ponce-0bb6ba1a9/' className='nav-link2'><GrLinkedinOption size={24}/></a></li>
-      <li className='nav-item two'><a href='https://github.com/Samanthaponce5' className='nav-link2'><FaGithubAlt size={20}/></a></li>
-      <li className='nav-item two'><a href='https://www.instagram.com/samntha_p/' className='nav-link2'><FiInstagram size={20}/></a></li>
-   
-    </ul>
-    
-  </nav>
+<Navbar/>
 
     <section className='home-area' id='home'>
       <div className='hero' ref={el =>hero=el}>
@@ -149,62 +113,28 @@ for(let i = 0; i<logo.length;i++){
     <div className='slider' ref={el =>slider=el}></div>
 
 
+    <div className='about-area' id='about'>
+      <About/>
+
+  </div>
+
+
+
    
    
     <div className='projects-area' id='projects'>
-      <div className='text-part'>
-        <h1>Projects</h1>
-        <p>Lorem "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br/>
-           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis<br/>
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br/>
-             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore<br/>
-             eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt<br/>
-              in culpa qui officia deserunt mollit anim id est laborum."</p>
-      </div>
+   <Projects/>
     </div>
 
-    <div className='about-area' id='about'>
-      <div className='text-part about'>
-        <h1>A little bit about me . . .</h1>
-        <p>
-          Hey! I’m Samantha Ponce, a full-stack developer living in New York.<br/>
-          I'm continuously learning new technologies, self-motivated and I'm always<br/>
-          looking for something new to challenge myself. I love being creative and problem-solving <br/>
-          which is why I love web development. I also love hiking with my dogs and flying drones during my free time.
-        </p>
-      </div>
-
- <div class="wrap">
-  <div class="cube">
-    <div class="front">
-    </div>
-    <div class="back">
-    </div>
-    <div class="top">
-      
-    </div>
-    <div class="bottom">
-    </div>
-    <div class="left">
-    </div>
-    <div class="right">
-    </div>
-  </div>
-</div>
-
-  </div>
+    
 
 
 
     <div className='contact-area' id='contact'>
       <div className='text-part'>
-        <h1>Contact</h1>
-        <p>Lorem "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br/>
-           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis<br/>
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br/>
-             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore<br/>
-             eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt<br/>
-              in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <h1>Contact Me</h1>
+        <h2>Email:  Samanthaponce5@gmail.com</h2>
+      <Email/>
       </div>
     </div>
 

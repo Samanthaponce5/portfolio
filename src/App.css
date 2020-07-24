@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 * {
 	margin: 0;
 	padding: 0;
@@ -19,21 +20,20 @@ body {
 }
 
 .navbar {
-	z-index: 10;
+	z-index: 999;
 	width: 100%;
 	height: 70px;
 	background-color: transparent;
 	position: fixed;
 	top: 0;
-  right: -2000px;
-  border-bottom:linear-gradient(to left, #6991c7, #a7bde7);
+	right: -2000px;
+	border-bottom: linear-gradient(to left, #6991c7, #a7bde7);
 	display: flex;
-  /* justify-content:center; */
-  
-	align-items: center;
-  transition: right 1s cubic-bezier(1, 0, 0, 1);
-	background: linear-gradient(to left, #6991c7, #a7bde7);
+	/* justify-content:center; */
 
+	align-items: center;
+	transition: right 1s cubic-bezier(1, 0, 0, 1);
+	background: linear-gradient(to left, #6991c7, #a7bde7);
 }
 .change {
 	right: 0;
@@ -113,13 +113,11 @@ body {
 	position: relative;
 	text-align: right;
 	float: right;
-  left: 45vw;
-
+	left: 45vw;
 }
 ul.nav-listtwo li {
 	display: inline;
-  margin: 0 10px;
-  
+	margin: 0 10px;
 }
 
 ul.nav-list {
@@ -195,10 +193,10 @@ ul.nav-list li {
 	height: 100vh;
 }
 .text-part {
-  position: relative;
+	position: relative;
 	/* width: 65%; */
-  height: 80%;
-  left: 1%;
+	height: 80%;
+	left: 1%;
 }
 
 h1 {
@@ -222,19 +220,16 @@ section {
 	display: flex;
 	height: 100vh;
 	align-items: center;
-  justify-content: center;
-  border-bottom: solid linear-gradient(to left, #6991c7, #a7bde7);
+	justify-content: center;
+	border-bottom: solid linear-gradient(to left, #6991c7, #a7bde7);
 }
 
 .hero {
 	height: 100vh;
 	width: 100%;
-  position: relative;
-  top: 20px;
-
+	position: relative;
+	top: 20px;
 }
-
-
 
 .hero::after {
 	content: '';
@@ -274,8 +269,8 @@ section {
 .all {
 	position: relative;
 	top: 90px;
-  left: 2%;
-  z-index: 6;
+	left: 2%;
+	z-index:999;
 }
 .intro.top {
 	position: relative;
@@ -290,9 +285,11 @@ section {
 	padding-right: 2%;
 }
 
-#hi,#name,#fullstack,#developer {
+#hi,
+#name,
+#fullstack,
+#developer {
   animation: fill 0.6s ease forwards 4.5s;
-  
 }
 
 #hi path:nth-child(1) {
@@ -321,7 +318,7 @@ section {
 
 #name path:nth-child(2) {
 	stroke-dasharray: 60.12594985961914;
-	stroke-dashoffset:60.12594985961914;
+	stroke-dashoffset: 60.12594985961914;
 	animation: line-anim 3s ease forwards 1.4s;
 }
 
@@ -376,7 +373,6 @@ section {
 	stroke-dashoffset: 60.361045837402344;
 	animation: line-anim 3s ease forwards 3.3s;
 }
-
 
 #fullstack path:nth-child(1) {
 	stroke-dasharray: 250.99961853027344;
@@ -433,7 +429,6 @@ section {
 	stroke-dashoffset: 250.26953125;
 	animation: line-anim 3s ease forwards 2.3s;
 }
-
 
 #developer path:nth-child(1) {
 	stroke-dasharray: 352.6358642578125;
@@ -511,189 +506,385 @@ section {
 }
 
 .wrap {
-  position: relative;
-  margin-top: 150px;
-  perspective: 1000px;
-  perspective-origin: 50% 50%;
-  left: -65%;
-  top: 100px;
+	position: relative;
+	margin-top: 150px;
+	perspective: 1000px;
+	perspective-origin: 50% 50%;
+	left: -65%;
+	top: 100px;
 }
 
 .cube {
-  margin: auto;
-  position: relative;
-  height:150px;
-  width: 150px;
-  transform-style: preserve-3d;
+	margin: auto;
+	position: relative;
+	height: 150px;
+	width: 150px;
+	transform-style: preserve-3d;
 }
 
 .cube > div {
-  position: absolute;
-  box-sizing: border-box;
-  padding: 10px;
-  height: 100%;
-  width: 100%;
-  opacity: 1;
-  background-color: #000;
-  /* border: solid 1px #eeeeee; */
-  color: #ffffff;
+	position: absolute;
+	box-sizing: border-box;
+	padding: 10px;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	background-color: #000;
+	/* border: solid 1px #eeeeee; */
+	color: #ffffff;
 }
 
 .front {
-  transform: translateZ(50px);
-  background-image: url('./images/4223.png');
-  background-size:cover;
-  background-position: center center;
+	transform: translateZ(50px);
+	background-image: url('./images/4223.png');
+	background-size: cover;
+	background-position: center center;
 }
 
 .back {
-  transform: translateZ(-100px) rotateY(180deg);
-
+	transform: translateZ(-100px) rotateY(180deg);
 }
 
 .right {
-  transform: rotateY(-270deg) translateX(100px);
-  transform-origin: top right;
-  background-image: url('./images/HTML5.jpg');
+	transform: rotateY(-270deg) translateX(100px);
+	transform-origin: top right;
+	background-image: url('./images/HTML5.jpg');
 
-  background-size:cover;
-  background-position: center center;
+	background-size: cover;
+	background-position: center center;
 }
 
 .left {
-  transform: rotateY(270deg) translateX(-100px);
-  transform-origin: center left;
-  background-image: url('./images/javascript-logo.png');
-  background-size:cover;
-  background-position: center center;
+	transform: rotateY(270deg) translateX(-100px);
+	transform-origin: center left;
+	background-image: url('./images/javascript-logo.png');
+	background-size: cover;
+	background-position: center center;
 }
 
 .top {
-  transform: rotateX(-270deg) translateY(-100px);
-  transform-origin: top center;
-  background-image: url('./images/reactjs.png');
+	transform: rotateX(-270deg) translateY(-100px);
+	transform-origin: top center;
+	background-image: url('./images/reactjs.png');
 
-  background-size:cover;
-  background-position: center center;
+	background-size: cover;
+	background-position: center center;
 }
 
 .bottom {
-  transform: rotateX(270deg) translateY(100px);
-  transform-origin: bottom center;
-  background-image: url('./images/css.png');
-  background-size:cover;
-  background-position: center center;
+	transform: rotateX(270deg) translateY(100px);
+	transform-origin: bottom center;
+	background-image: url('./images/css.png');
+	background-size: cover;
+	background-position: center center;
 }
 
 @keyframes rotate {
-  from {
-    transform: rotateX(0deg) rotateY(0deg);
-  }
-  
-  to {
-    transform: rotateX(360deg) rotateY(360deg);
-  }
+	from {
+		transform: rotateX(0deg) rotateY(0deg);
+	}
+
+	to {
+		transform: rotateX(360deg) rotateY(360deg);
+	}
 }
 
 .cube {
-  animation: rotate 20s infinite linear;
+	animation: rotate 20s infinite linear;
 }
 
-
-
-
-@keyframes animate{
-  from,to{
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-  }
-  16%{
-    transform: rotateY(-90deg);
-  }
-  33%{
-    transform: rotateY(-90deg) rotateZ(90deg);
-  }
-  50%{
-    transform: rotateY(-180deg) rotateZ(90deg);
-  }
-  66%{
-    transform: rotateY(-270deg) rotateZ(90deg);
-  }
-  83%{
-    transform: rotateY(90deg);
-  }
+@keyframes animate {
+	from,
+	to {
+		transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+	}
+	16% {
+		transform: rotateY(-90deg);
+	}
+	33% {
+		transform: rotateY(-90deg) rotateZ(90deg);
+	}
+	50% {
+		transform: rotateY(-180deg) rotateZ(90deg);
+	}
+	66% {
+		transform: rotateY(-270deg) rotateZ(90deg);
+	}
+	83% {
+		transform: rotateY(90deg);
+	}
 }
 
 @media only screen and (max-width: 987px) {
-  .nav-listtwo{
-    left: 35%;
-  }
-  .wrap{
-    left: -65%;
-    z-index: 9;
-    top: 100px;
-  }
+	.nav-listtwo {
+		left: 35%;
+	}
+	.wrap {
+		left: -65%;
+		z-index: 9;
+		top: 100px;
+	}
 }
 
 @media only screen and (max-width: 833px) {
-  .nav-listtwo{
-    left: 30%;
-  }
-  .wrap{
-    left: -75%;
-    /* top: -250px; */
-  }
+	.nav-listtwo {
+		left: 30%;
+	}
+	.wrap {
+		left: -75%;
+		/* top: -250px; */
+	}
 
-  .cube {
-   
-    height:120px;
-    width: 120px;
-  }
-  .front {
-    transform: translateZ(20px);
-
-  }
-
+	.cube {
+		height: 120px;
+		width: 120px;
+	}
+	.front {
+		transform: translateZ(20px);
+	}
 }
 @media only screen and (max-width: 804px) {
-
-  .wrap{
-    left: -30%;
-    top: -200px;
-  }
-  .text-part.about{
-    top: 90px;
-  }
+	.wrap {
+		left: -30%;
+		top: -200px;
+	}
+	.text-part.about {
+		top: 90px;
+	}
 }
 
 @media only screen and (max-width: 810px) {
-
- 
- .hi,.name,.fullstack,.developer{
-   position: relative;
-    width:45vw ;
-  }
-  .hi{
-    left: -36%;
-  }
-  .name{
-    left: 2%;
-  }
-  .fullstack{
-    left: -2%;
-  }
+	.hi,
+	.name,
+	.fullstack,
+	.developer {
+		position: relative;
+		width: 45vw;
+	}
+	.hi {
+		left: -36%;
+	}
+	.name {
+		left: 2%;
+	}
+	.fullstack {
+		left: -2%;
+	}
 }
 
 @media only screen and (max-width: 700px) {
-  .text-part.about{
-    top: 80px;
-  }
-
-
+	.text-part.about {
+		top: 80px;
+	}
 }
 
 @media only screen and (max-width: 784px) {
+	.nav-listtwo {
+		left: 20%;
+	}
+}
+/* projects */
 
-  .nav-listtwo{
-    left: 20%;
-  }
+.carousel-wrapper {
+	height: 500px;
+	position: relative;
+	width: 600px;
+	margin: 0 auto;
+	left: -10%;
+}
+.carousel-item {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 25px 50px;
+	opacity: 0;
+	transition: all 1s ease-in-out;
+}
+.arrow {
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 12px;
+}
+
+.arrow-prev {
+	left: -30px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) rotate(135deg);
+}
+
+.arrow-next {
+	right: -280px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) rotate(-45deg);
+}
+
+.light {
+	color: white;
+}
+
+@media (max-width: 480px) {
+	.arrow,
+	.light .arrow {
+		background-size: 10px;
+		background-position: 10px 50%;
+	}
+}
+
+/*Select every element*/
+[id^='item'] {
+	display: none;
+}
+
+.item-1 {
+	z-index: 2;
+	opacity: 1;
+	background: url('./images/Screen\ Shot\ 2020-07-23\ at\ 11.12.56\ PM.png');
+	background-size: cover;
+	background-position: center;
+}
+.item-2 {
+	background: url('./images/Screen\ Shot\ 2020-07-24\ at\ 12.01.10\ AM.png');
+	background-size: cover;
+	background-position: center;
+}
+.item-3 {
+	background: url('https://static.pexels.com/photos/6529/lake-kajak-kayak-large.jpg');
+	background-size: cover;
+}
+
+*:target ~ .item-1 {
+	opacity: 0;
+}
+
+#item-1:target ~ .item-1 {
+	opacity: 1;
+}
+
+#item-2:target ~ .item-2,
+#item-3:target ~ .item-3 {
+	z-index: 3;
+	opacity: 1;
+}
+.projectInfo {
+	position: relative;
+	/* border: .5px solid #a7bde7; */
+	background-color: #a7bde7;
+	font-family: 'Amatic SC', cursive;
+	height: 500px;
+	width: 50%;
+	left: 110%;
+	top: -13.1%;
+}
+.describe{
+  position: relative;
+ line-height: 30px;
+ font-weight: bold;
+ top: 12px;
+ margin-right: 10px;
+}
+.projectInfo h1 {
+position: relative;
+left: 15px;
+}
+.projectInfo p{
+  position: relative;
+  left: 15px;
+}
+ul.stack{
+position: relative;
+top: 35px;
+left:15% ;
+list-style: circle;
+font-weight: bold;
+font-size: 20px;
+}
+ul.stack li{
+margin-bottom: 15px;
+}
+.viewbtn a{
+  text-decoration: none;
+  color: rgb(45, 102, 112);
+  font-weight: bolder;
+}
+.viewbtn a:hover{
+  color: black;
+}
+.viewbtn{
+  position: relative;
+  top: 9%;
+  height: 30px;
+  width: 100px;
+  background-color: transparent;
+  border:.5px solid white;
+  color: white;
+  left: 65px;
+  margin-bottom: 15px;
+  background: linear-gradient(to right, white 50%, transparent 50%);
+  background-position: right bottom;
+  display: block;
+  background-size: 200% 100%;
+
+  transition: all .7s ease-out;
+
+}
+.viewbtn:hover {
+  background-position: left bottom;
+}
+
+/* Contact section */
+
+.nameInput,.emailInput{
+width: 250px;
+height: 50px;
+margin-bottom: 10px;
+margin-right: 5px;
+border: solid transparent;
+}
+
+.emailInput{
+
+}
+.subjectInput{
+  height: 50px;
+  width: 512px;
+  margin-bottom: 10px;
+  border: solid transparent;
+
+}
+.messageInput{
+  height: 150px;
+  width: 513px;
+  border: solid transparent;
+
+}
+.form{
+  position: relative;
+  top:50px;
+}
+.send{
+  position: relative;
+  left: 50%;
+  height: 30px;
+  width: 100px;
+  background-color: transparent;
+  border:.5px solid white;
+  color: white;
+  transform: translate(-50%);
+  cursor: pointer;
+  background: linear-gradient(to right, white 50%, transparent 50%);
+  background-position: right bottom;
+  display: block;
+  background-size: 200% 100%;
+  transition: all .7s ease-out;
+}
+
+.send:hover {
+  background-position: left bottom;
+  color: black;
+
 }
