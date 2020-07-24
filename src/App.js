@@ -44,7 +44,7 @@ for(let i = 0; i<logo.length;i++){
   .fromTo(slider,1.2,{x:'100%'},{x:'0%',ease:Power2.easeInOut},
   '-=1.6')
   .fromTo(navbar, 0.5,{opacity:0,x:30},{opacity:1,x:0},'-=0.5')
-  .fromTo(navbar2, 0.5,{opacity:0,x:30},{opacity:1,x:0},'-=0.5')
+  .fromTo(navbar2, 0.5,{opacity:0},{opacity:1},'-=0.5')
 
   .fromTo(hi, 0.2,{opacity:0,x:10},{opacity:1,x:0},'-=1')
   .fromTo(name, 0.2,{opacity:0,x:10},{opacity:1,x:0},'-=1')
@@ -59,7 +59,7 @@ for(let i = 0; i<logo.length;i++){
    <header>
    
 
-<nav className={changeClass.join(' ')} >
+<nav ref={el =>navbar2=el}  className={changeClass.join(' ')} >
   <div className='hamburger-menu' onClick={toggle}>
     <div className='line line-1'></div>
      <div className='line line-2'></div>
@@ -154,43 +154,56 @@ for(let i = 0; i<logo.length;i++){
     <div className='projects-area' id='projects'>
       <div className='text-part'>
         <h1>Projects</h1>
-        <p>Lorem "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-             eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+        <p>Lorem "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br/>
+           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis<br/>
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br/>
+             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore<br/>
+             eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt<br/>
               in culpa qui officia deserunt mollit anim id est laborum."</p>
       </div>
     </div>
 
     <div className='about-area' id='about'>
-      <div className='text-part'>
-
-
-
-
-
-
-        <h1>About</h1>
-        <p>Lorem "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-             eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-              in culpa qui officia deserunt mollit anim id est laborum."</p>
+      <div className='text-part about'>
+        <h1>A little bit about me . . .</h1>
+        <p>
+          Hey! I’m Samantha Ponce, a full-stack developer living in New York.<br/>
+          I'm continuously learning new technologies, self-motivated and I'm always<br/>
+          looking for something new to challenge myself. I love being creative and problem-solving <br/>
+          which is why I love web development. I also love hiking with my dogs and flying drones during my free time.
+        </p>
       </div>
+
+ <div class="wrap">
+  <div class="cube">
+    <div class="front">
     </div>
+    <div class="back">
+    </div>
+    <div class="top">
+      
+    </div>
+    <div class="bottom">
+    </div>
+    <div class="left">
+    </div>
+    <div class="right">
+    </div>
+  </div>
+</div>
+
+  </div>
 
 
 
     <div className='contact-area' id='contact'>
       <div className='text-part'>
         <h1>Contact</h1>
-        <p>Lorem "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-             eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+        <p>Lorem "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br/>
+           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis<br/>
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br/>
+             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore<br/>
+             eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt<br/>
               in culpa qui officia deserunt mollit anim id est laborum."</p>
       </div>
     </div>
