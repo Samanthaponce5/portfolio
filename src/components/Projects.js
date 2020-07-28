@@ -11,7 +11,7 @@ export default class Projects extends React.Component{
             <div class="carousel-item item-1">
               <h2>Project 1 </h2>
               <div className='projectInfo'>
-              <h1>Jack's Journey</h1>
+              <h1 className='projectName'>Jack's Journey</h1>
               <p className='describe'>The goal is to educate users about plastic pollution and it's
                  effects on marine life thorugh an interactive scrolling site 
                </p>
@@ -40,6 +40,8 @@ export default class Projects extends React.Component{
                  <li>Postgres Databse</li>
                </ul>
                <button className='viewbtn' ><a href='https://github.com/Samanthaponce5/Ecomm-frontend'>View Code</a></button>
+               <button className='viewbtn' ><a href='https://youtu.be/SsByJf9NJJ4'>Demo</a></button>
+
               </div>
               <a class="arrow arrow-prev" href="#item-1"></a>
               <a class="arrow arrow-next" href="#item-3"></a>

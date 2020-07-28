@@ -9,10 +9,10 @@ export default class About extends React.Component{
             <div className='text-part about'>
         <h1>A little bit about me . . .</h1>
         <p>
-          Hey! I’m Samantha Ponce, a full-stack developer living in New York.<br/>
-          I'm continuously learning new technologies, self-motivated and I'm always<br/>
-          looking for something new to challenge myself. I love being creative and problem-solving <br/>
-          which is why I love web development. I also love hiking with my dogs and flying drones during my free time.
+         <span className='sentence one'> Hey! I’m Samantha Ponce, a full-stack developer living in New York.</span>
+         <span className='sentence two'> I'm continuously learning new technologies, self-motivated and I'm always</span>
+         <span className='sentence three'> looking for something new to challenge myself. I love being creative and problem-solving </span>
+         <span className='sentence four'> which is why I love web development. I also love hiking with my dogs and flying drones during my free time.</span>
         </p>
       </div>
 
@@ -32,6 +32,20 @@ export default class About extends React.Component{
     <div class="right">
     </div>
   </div>
+</div>
+
+
+<div className='languages'>
+    <h3>My Skills</h3>
+    <ul className='laguagesStacks'>
+        <li>ReactJs</li>
+        <li>JavaScript</li>
+        <li>Ruby on Rails</li>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+       
+
+    </ul>
 </div>
 </>
         )

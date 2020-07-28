@@ -5,6 +5,9 @@ import Email from './components/Email';
 import Projects from './components/Projects';
 import About from './About';
 import Navbar from './components/Navbar';
+import { GrLinkedinOption } from 'react-icons/gr';
+import { FiInstagram } from 'react-icons/fi';
+import { FaGithubAlt } from 'react-icons/fa';
 
 
 
@@ -17,6 +20,11 @@ let hi=useRef(null)
 let name= useRef(null)
 let fullstack= useRef(null)
 let developer= useRef(null)
+let circle1=useRef(null)
+let circle2=useRef(null)
+let circle3=useRef(null)
+let circle4=useRef(null)
+let circle5=useRef(null)
 
 const t1 = new TimelineMax()
 useEffect(()=>{
@@ -37,6 +45,11 @@ for(let i = 0; i<logo.length;i++){
   .fromTo(name, 0.2,{opacity:0,x:10},{opacity:1,x:0},'-=1')
   .fromTo(fullstack, 0.2,{opacity:0,x:10},{opacity:1,x:0},'-=1')
   .fromTo(developer, 0.2,{opacity:0,x:10},{opacity:1,x:0},'-=1')
+  .fromTo(circle1, 0.5,{opacity:0,x:10},{opacity:1,x:0},'-=0.1')
+  .fromTo(circle2, 0.6,{opacity:0,x:10},{opacity:1,x:0},'-=0.4')
+  .fromTo(circle3, 0.7,{opacity:0,x:10},{opacity:1,x:0},'-=0.3')
+  .fromTo(circle4, 0.8,{opacity:0,x:10},{opacity:1,x:0},'-=0.5')
+  .fromTo(circle5, 0.9,{opacity:0,x:10},{opacity:1,x:0},'-=0.8')
 
 },[])
 
@@ -109,13 +122,24 @@ for(let i = 0; i<logo.length;i++){
 </div>
       </div>
       </div>
+    
+      <div ref={el =>circle1=el} className='circles first '></div>
+    <div ref={el =>circle2=el} className='circles second'></div>
+    <div ref={el =>circle3=el} className='circles third'></div>
+    <div ref={el =>circle4=el} className='circles fourth'></div>
+    <div ref={el =>circle5=el} className='circles fifth'></div>
     </section>
     <div className='slider' ref={el =>slider=el}></div>
 
 
     <div className='about-area' id='about'>
       <About/>
-
+      
+      <div className='circles first aboutc'></div>
+    <div className='circles second aboutc'></div>
+    <div className='circles third aboutc'></div>
+    <div className='circles fourth aboutc'></div>
+    <div className='circles fifth aboutc'></div>
   </div>
 
 
@@ -124,6 +148,11 @@ for(let i = 0; i<logo.length;i++){
    
     <div className='projects-area' id='projects'>
    <Projects/>
+   <div className='circles first projectc'></div>
+    <div className='circles second projectc'></div>
+    <div className='circles third projectc'></div>
+    <div className='circles fourth projectc'></div>
+    <div className='circles fifth projectc'></div>
     </div>
 
     
@@ -134,7 +163,16 @@ for(let i = 0; i<logo.length;i++){
       <div className='text-part'>
         <h1>Contact Me</h1>
         <h2>Email:  Samanthaponce5@gmail.com</h2>
+        <h2 className='myresume'>My Resume:  <a href='https://docs.google.com/document/d/1Bx_stOFeX2983my0mq1-rZqQcQ4prJOj8ipitfZYCNw/edit'>Here</a></h2>
+
+        <ul className="contact-listtwo" >
+    <li className='contact-item two'><a href='https://www.linkedin.com/in/samantha-ponce-0bb6ba1a9/' className='nav-link2'><GrLinkedinOption size={35}/></a></li>
+      <li className='contact-item two'><a href='https://github.com/Samanthaponce5' className='nav-link2'><FaGithubAlt size={32}/></a></li>
+      <li className='contact-item two'><a href='https://www.instagram.com/samntha_p/' className='nav-link2'><FiInstagram size={30}/></a></li>
+   
+    </ul>
       <Email/>
+      
       </div>
     </div>
 
