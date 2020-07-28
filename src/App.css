@@ -1158,6 +1158,7 @@ textarea{
        ul.stack{
         /* top: 10px; */
         margin-left: 3px;
+
         }
         ul.stack li{
         margin-bottom: 5px;
@@ -1188,6 +1189,7 @@ textarea{
     ul.stack{
       /* top: 10px; */
       margin-left: 10px;
+      margin-right: 15px;
       }
       ul.stack li{
       margin-bottom: 5px;
@@ -1245,9 +1247,11 @@ textarea{
     ul.stack{
       /* top: 10px; */
       margin-left: 5px;
+
       }
       ul.stack li{
       margin-bottom: 5px;
+      
     
       }
       .languages{
