@@ -23,7 +23,7 @@ export default class Projects extends React.Component{
                </ul>
                 <button className='viewbtn'><a href='https://jacks-journey.herokuapp.com/'>View Site</a></button> <button className='viewbtn' ><a href='https://github.com/Samanthaponce5/thePlasticJourney-frontend'>View Code</a></button>
               </div>
-              <a class="arrow arrow-prev" href="#item-3"></a>
+              {/* <a class="arrow arrow-prev" href="#item-3"></a> */}
               <a class="arrow arrow-next" href="#item-2"></a>
             </div>
             
@@ -44,15 +44,15 @@ export default class Projects extends React.Component{
 
               </div>
               <a class="arrow arrow-prev" href="#item-1"></a>
-              <a class="arrow arrow-next" href="#item-3"></a>
+              {/* <a class="arrow arrow-next" href="#item-3"></a> */}
             </div>
-            
+{/*             
             <div class="carousel-item item-3">
               <h2>Item 3</h2>
               <div className='projectInfo'></div>
               <a class="arrow arrow-prev" href="#item-2"></a>
               <a class="arrow arrow-next" href="#item-1"></a>
-            </div>
+            </div> */}
           </div>
 
 

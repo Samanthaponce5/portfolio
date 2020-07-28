@@ -37,13 +37,19 @@ export default class About extends React.Component{
 
 <div className='languages'>
     <h3>My Skills</h3>
-    <ul className='laguagesStacks'>
+    <ul className='laguagesStacks first'>
         <li>ReactJs</li>
         <li>JavaScript</li>
         <li>Ruby on Rails</li>
         <li>CSS</li>
         <li>Bootstrap</li>
-       
+        </ul>
+        <ul className='laguagesStacks second'>
+        <li>HTML</li>
+        <li>PostgresSQL</li>
+        <li>Git</li>
+        <li>Ruby</li>
+        <li>RESTful APIs</li>
 
     </ul>
 </div>
