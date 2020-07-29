@@ -8,6 +8,7 @@
 body {
   font-family: 'Teko', sans-serif;
   overflow-x: hidden;
+  background-color: #a7bde7bb;
 }
 html{
   overflow-x: hidden;
@@ -1101,6 +1102,9 @@ border: solid transparent;
   width: 513px;
   border: solid transparent;
 
+}
+textarea{
+  resize: none;
 }
 .form{
   position: relative;

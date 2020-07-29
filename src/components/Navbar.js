@@ -24,8 +24,8 @@ import { FaGithubAlt } from 'react-icons/fa';
   const t1 = new TimelineMax()
   useEffect(()=>{
     setClass(!addClass)
-    t1.fromTo(navbar, 3.5,{opacity:0,x:30},{opacity:1,x:0})
-    .fromTo(navbar2, 3.5,{opacity:0},{opacity:1})
+    t1.fromTo(navbar, 2.2,{opacity:0,x:30},{opacity:1,x:0})
+    .fromTo(navbar2, 2.2,{opacity:0},{opacity:1})
   
   },[])
 

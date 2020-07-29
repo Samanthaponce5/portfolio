@@ -36,8 +36,8 @@ for(let i = 0; i<logo.length;i++){
   console.log(`letter ${i} is ${logo[i].getTotalLength()}`)
 }
 
-  t1.fromTo(hero,1.5 ,{height:"0%"}, {height:"550px", ease:Power2.easeInOut}
-  ).fromTo(hero,1.2,{width:'100%'},{width:'50%', ease:Power2.easeInOut}
+  t1.fromTo(hero,1 ,{height:"0%"}, {height:"550px", ease:Power2.easeInOut}
+  ).fromTo(hero,1,{width:'100%'},{width:'50%', ease:Power2.easeInOut}
   ).fromTo(hero,1.2,{left:'0%'},{left:'-20%', ease:Power2.easeInOut}
   )
   .fromTo(slider,1.2,{x:'100%'},{x:'0%',ease:Power2.easeInOut},
