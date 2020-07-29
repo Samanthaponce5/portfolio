@@ -1,6 +1,8 @@
 import React, { useEffect, useRef} from 'react';
 import './App.css';
 import {  Power2, TimelineMax } from "gsap";
+import CSSPlugin from 'gsap/CSSPlugin';
+
 import Email from './components/Email';
 import Projects from './components/Projects';
 import About from './About';
@@ -12,6 +14,7 @@ import { FaGithubAlt } from 'react-icons/fa';
 
 
 function App() {
+  const C = CSSPlugin;  
 
 let hero = useRef(null)
 
