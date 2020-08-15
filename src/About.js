@@ -6,6 +6,7 @@ export default class About extends React.Component{
 
         return(
             <>
+              <div className='about-area' id='about'>
             <div className='text-part about'>
         <h1>A little bit about me . . .</h1>
         <p>
@@ -53,6 +54,12 @@ export default class About extends React.Component{
 
     </ul>
 </div>
+<div className='circles first aboutc'></div>
+    <div className='circles second aboutc'></div>
+    <div className='circles third aboutc'></div>
+    <div className='circles fourth aboutc'></div>
+    <div className='circles fifth aboutc'></div>
+  </div>
 </>
         )
     }

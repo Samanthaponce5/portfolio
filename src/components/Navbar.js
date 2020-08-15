@@ -3,6 +3,7 @@ import { TimelineMax } from "gsap";
 import { GrLinkedinOption } from 'react-icons/gr';
 import { FiInstagram } from 'react-icons/fi';
 import { FaGithubAlt } from 'react-icons/fa';
+import {Link} from 'react-router-dom'
 
 
  function Navbar (){
@@ -41,10 +42,10 @@ import { FaGithubAlt } from 'react-icons/fa';
   </div>
 
     <ul className="nav-list" ref={el =>navbar=el}>
-      <li className='nav-item'><a href='#home' className='nav-link'>Home</a></li>
-      <li className='nav-item'><a href='#about' className='nav-link'>About</a></li>
-      <li className='nav-item'><a href='#projects' className='nav-link'>Projects</a></li>
-      <li><a href='#contact' className='nav-link'>Contact</a></li>
+      <li className='nav-item'><Link to='/' className='nav-link'>Home</Link></li>
+      <li className='nav-item'><Link to='/about' className='nav-link'>About</Link></li>
+      <li className='nav-item'><Link to='/projects' className='nav-link'>Projects</Link></li>
+      <li><Link to='/contact' className='nav-link'>Contact</Link></li>
     </ul>
 
 

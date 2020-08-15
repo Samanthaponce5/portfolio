@@ -4,6 +4,7 @@ export default class Projects extends React.Component{
 
     render(){
         return(
+          <div className='projects-area' id='projects'>
             <div class="carousel-wrapper">
             <span id="item-1"></span>
             <span id="item-2"></span>
@@ -54,6 +55,12 @@ export default class Projects extends React.Component{
               <a class="arrow arrow-next" href="#item-1"></a>
             </div> */}
           </div>
+          <div className='circles first projectc'></div>
+    <div className='circles second projectc'></div>
+    <div className='circles third projectc'></div>
+    <div className='circles fourth projectc'></div>
+    <div className='circles fifth projectc'></div>
+    </div>
 
 
         )
