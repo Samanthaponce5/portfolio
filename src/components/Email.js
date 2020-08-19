@@ -64,7 +64,13 @@ export default class Email extends React.Component{
             </form>
 
             </div>
+            <div className='circles first aboutc'></div>
+    <div className='circles second aboutc'></div>
+    <div className='circles third aboutc'></div>
+    <div className='circles fourth aboutc'></div>
+    <div className='circles fifth aboutc'></div> 
     </div>
+     
         )
     }
 }

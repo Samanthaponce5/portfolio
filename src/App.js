@@ -8,6 +8,7 @@ import Navbar from './components/Navbar';
 
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
 import Home from './components/Home';
+import ScrollToTop from './components/ScrollToTop';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
 
 
 <Router>
+ <ScrollToTop/>
 <Navbar/>
   <Switch>
     <Route exact path='/'><Home/> </Route>
@@ -26,6 +28,7 @@ function App() {
     <Route exact path='/projects'><Projects/> </Route>
     <Route exact path='/contact'><Email/> </Route>
   </Switch>
+
 </Router>
 
 
