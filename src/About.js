@@ -20,7 +20,13 @@ export default class About extends React.Component{
         </p>
       </div>
 
- <div class="wrap">
+      <div >
+
+
+
+      </div>
+
+ {/* <div class="wrap">
   <div class="cube">
     <div class="front">
     </div>
@@ -36,7 +42,7 @@ export default class About extends React.Component{
     <div class="right">
     </div>
   </div>
-</div>
+</div> */}
 
 
 {/* <div className='languages'> */}

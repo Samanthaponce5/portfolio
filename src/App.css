@@ -190,7 +190,7 @@ ul.nav-list li {
 	height: 700px;
   position: relative;
   /* margin-bottom: -3%; */
-
+  overflow: hidden;
 }
 
 .about-area,
@@ -204,7 +204,8 @@ ul.nav-list li {
 	flex-wrap: wrap;
 	flex-direction: row;
 	width: 100%;
-	height: 650px;
+  height: 650px;
+  /* overflow: hidden; */
 }
 .text-part.about{
 	position: relative;
