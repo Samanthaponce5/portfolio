@@ -1,10 +1,21 @@
 import React from 'react'
 import { snap } from 'gsap/gsap-core'
-
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 export default class About extends React.Component{
 
-    render(){
+  componentDidMount(){
+    Aos.init()
+    Aos.refresh()
+  }
 
+    render(){
+      let postgresSQL = require('./images/output-onlinepngtools__6_-removebg-preview.png')
+      let html = require('./images/output-onlinepngtools__4_-removebg-preview.png')
+      let css = require('./images/output-onlinepngtools__5_-removebg-preview.png')
+      let js = require('./images/output-onlinepngtools__1_-removebg-preview.png')
+      let ruby = require('./images/output-onlinepngtools__2_-removebg-preview.png')
+      let react = require('./images/output-onlinepngtools__3_-removebg-preview.png')
         return(
             <>
               <div className='about-area' id='about'>
@@ -19,13 +30,16 @@ export default class About extends React.Component{
          <span>  ReactJS, JavaScript, Ruby on Rails, CSS, Bootstrap, HTML, PostgresSQL, Git, Ruby, RESTful APIs.</span>
         </p>
       </div>
-
-      <div >
-
-
-
+       <div className='divStack'>
+      <ul  className='langImgUl' >
+        <li><img data-aos-delay="150" data-aos="fade-down" className='langImg react' src={react}/><br/> <label data-aos-delay="200" data-aos="fade-down" className='label'>REACTJS</label></li>
+        <li><img data-aos-delay="350"  data-aos="fade-down"  className='langImg js' src={js}/></li>
+        <li><img data-aos-delay="700"  data-aos="fade-down" className='langImg' src={html}/></li>
+        <li><img data-aos-delay="900"  data-aos="fade-down" className='langImg css' src={css}/></li>
+        <li><img data-aos-delay="1100"  data-aos="fade-down" className='langImg' src={ruby}/></li>
+        <li><img  data-aos-delay="1300"  data-aos="fade-down"  className='langImg' src={postgresSQL}/></li>
+      </ul>
       </div>
-
  {/* <div class="wrap">
   <div class="cube">
     <div class="front">
