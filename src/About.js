@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { Profiler } from 'react'
 import { snap } from 'gsap/gsap-core'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import profile from './images/profile.jpg'
 export default class About extends React.Component{
 
   componentDidMount(){
@@ -19,8 +20,8 @@ export default class About extends React.Component{
         return(
             <>
               <div className='about-area' id='about'>
+        <h1 id='aboutme'>A little bit about me . . .</h1>
             <div className='text-part about'>
-        <h1>A little bit about me . . .</h1>
         <p>
          <span className='sentence one'> Hey! 👋🏼 I’m Samantha Ponce, a full-stack developer living in New York.</span>
          <span className='sentence two'> I'm continuously learning new technologies, self-motivated and I'm always</span>
@@ -30,16 +31,19 @@ export default class About extends React.Component{
          <span>  ReactJS, JavaScript, Ruby on Rails, CSS, Bootstrap, HTML, PostgresSQL, Git, Ruby, RESTful APIs.</span>
         </p>
       </div>
+      <img className='profilePic' src={profile}/>
+      <section id='secondAboutSkills'>
        <div className='divStack'>
       <ul  className='langImgUl' >
         <li><img data-aos-delay="150" data-aos="fade-down" className='langImg react' src={react}/><br/> <label data-aos-delay="200" data-aos="fade-down" className='label'>REACTJS</label></li>
-        <li><img data-aos-delay="350"  data-aos="fade-down"  className='langImg js' src={js}/></li>
-        <li><img data-aos-delay="700"  data-aos="fade-down" className='langImg' src={html}/></li>
-        <li><img data-aos-delay="900"  data-aos="fade-down" className='langImg css' src={css}/></li>
+        <li><img data-aos-delay="350"  data-aos="fade-down" className='langImg' src={html}/></li>
+        <li><img data-aos-delay="700"   data-aos="fade-down" className='langImg css' src={css}/></li>
+        <li><img data-aos-delay="900"  data-aos="fade-down"  className='langImg js' src={js}/></li>
         <li><img data-aos-delay="1100"  data-aos="fade-down" className='langImg' src={ruby}/></li>
         <li><img  data-aos-delay="1300"  data-aos="fade-down"  className='langImg' src={postgresSQL}/></li>
       </ul>
       </div>
+      </section>
  {/* <div class="wrap">
   <div class="cube">
     <div class="front">
