@@ -1741,3 +1741,50 @@ ul.langImgUl{
       top: 350px;
     }
   }
+
+  @media only screen and (max-width: 280px) {
+    .nav-link{
+      font-size: 17px;
+      margin-left: -4px;
+    }
+    .name{
+      width: 260px;
+    }
+    .fullstack{
+      width: 250px;
+    }
+    .developer{
+      width: 250px;
+    }
+    #aboutme{
+      font-size: 23px;
+      left: 25px;
+    }
+    .profilePic{
+      width: 240px;
+    }
+    .myskillsTitle{
+      top: 20px;
+    }
+    ul.langImgUl{
+      top: 430px;
+      grid-gap: 20px;
+
+    }
+    .arrow-next{
+      right: -1px;
+    }
+    .arrow-prev{
+      left: -7px;
+    }
+   .text-part  {
+     position: relative;
+     left: 35px;
+   }
+   .nameInput, .emailInput, .subjectInput, .messageInput{
+     width: 230px;
+   }
+   .send{
+     left: 120px;
+   }
+  }
