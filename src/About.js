@@ -24,11 +24,12 @@ export default class About extends React.Component{
             <div className='text-part about'>
         <p>
          <span className='sentence one'> Hey! 👋🏼 I’m Samantha Ponce, a full-stack developer living in New York.</span>
-         <span className='sentence two'> I'm continuously learning new technologies, self-motivated and I'm always</span>
-         <span className='sentence three'> looking for something new to challenge myself. I love being creative and problem-solving </span>
-         <span className='sentence four'> which is why I love web development. </span> 
-         <span className='include'><b>My Skills Include: </b> </span>
-         <span>  ReactJS, JavaScript, Ruby on Rails, CSS, Bootstrap, HTML, PostgresSQL, Git, Ruby, RESTful APIs.</span>
+         <span className='sentence two'> Experienced in CSS, Ruby on Rails, and JavaScript-based programming. I'm continuously learning new technologies, self-motivated and I'm always</span>
+         <span className='sentence three'> looking for something new to challenge myself. I love being creative and problem-solving which is why I love web development. </span>
+         <span className='sentence four'> My prior work experience has made me successful working in both teams and self-directed settings providing me with strong skills in decision-making and organization.  </span> 
+
+         {/* <span className='include'><b>My Skills Include: </b> </span>
+         <span>  ReactJS, JavaScript, Ruby on Rails, CSS, Bootstrap, HTML, PostgresSQL, Git, Ruby, RESTful APIs.</span> */}
         </p>
       </div>
       <img className='profilePic' src={profile}/>

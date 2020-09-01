@@ -220,9 +220,10 @@ ul.nav-list li {
 }
 #aboutme{
   position: absolute;
-  left: 110px;
+  left: 100px;
   top: 100px;
-  font-family: 'Londrina Shadow', cursive;;
+  font-family: 'Londrina Shadow', cursive;
+  font-size: 40px;
 
 }
 .text-part.about{
@@ -239,8 +240,8 @@ ul.nav-list li {
 
 .profilePic{
   position: absolute;
-  width: 500px;
-  left: 25px;
+  width: 325px;
+  left: 85px;
   top: 170px;
   border-radius:25% 25% 16% 17% / 56% 69% 49% 59%  ;
 }
