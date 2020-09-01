@@ -3,6 +3,20 @@ import { snap } from 'gsap/gsap-core'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import profile from './images/profile.jpg'
+import { SiJavascript } from "react-icons/si";
+import {FaReact} from 'react-icons/fa'
+import {DiHtml5} from 'react-icons/di'
+import {DiCss3} from 'react-icons/di'
+import {DiBootstrap} from 'react-icons/di'
+import {DiRuby} from 'react-icons/di'
+import {SiRails} from 'react-icons/si'
+import {SiRedux} from 'react-icons/si'
+import {FaGitAlt} from 'react-icons/fa'
+import {FaGithubSquare} from 'react-icons/fa'
+import {SiHeroku} from 'react-icons/si'
+import {SiPostgresql} from 'react-icons/si'
+import {SiVisualstudio} from 'react-icons/si'
+import {IoLogoNpm} from 'react-icons/io'
 export default class About extends React.Component{
 
   componentDidMount(){
@@ -11,12 +25,7 @@ export default class About extends React.Component{
   }
 
     render(){
-      let postgresSQL = require('./images/output-onlinepngtools__6_-removebg-preview.png')
-      let html = require('./images/output-onlinepngtools__4_-removebg-preview.png')
-      let css = require('./images/output-onlinepngtools__5_-removebg-preview.png')
-      let js = require('./images/output-onlinepngtools__1_-removebg-preview.png')
-      let ruby = require('./images/output-onlinepngtools__2_-removebg-preview.png')
-      let react = require('./images/output-onlinepngtools__3_-removebg-preview.png')
+    
         return(
             <>
               <div className='about-area' id='about'>
@@ -36,12 +45,20 @@ export default class About extends React.Component{
       <section id='secondAboutSkills'>
        <div className='divStack'>
       <ul  className='langImgUl' >
-        <li><img data-aos-delay="150" data-aos="fade-down" className='langImg react' src={react}/><br/> <label data-aos-delay="200" data-aos="fade-down" className='label'>REACTJS</label></li>
-        <li><img data-aos-delay="350"  data-aos="fade-down" className='langImg' src={html}/></li>
-        <li><img data-aos-delay="700"   data-aos="fade-down" className='langImg css' src={css}/></li>
-        <li><img data-aos-delay="900"  data-aos="fade-down"  className='langImg js' src={js}/></li>
-        <li><img data-aos-delay="1100"  data-aos="fade-down" className='langImg' src={ruby}/></li>
-        <li><img  data-aos-delay="1300"  data-aos="fade-down"  className='langImg' src={postgresSQL}/></li>
+        <li><SiJavascript size={60}/></li>
+        <li> <FaReact size={60}/></li>
+        <li><DiHtml5 size={60}/></li>
+        <li><DiCss3 size={60}/></li>
+        <li><DiBootstrap size={60}/></li>
+        <li><DiRuby size={60}/></li>
+        <li><SiRails size={60}/></li>
+        <li><SiRedux size={60}/></li>
+        <li><FaGitAlt size={60}/></li>
+        <li><FaGithubSquare size={60}/></li>
+        <li><SiHeroku size={60}/></li>
+        <li><SiPostgresql size={60}/></li>
+        <li><SiVisualstudio size={60}/></li>
+        <li><IoLogoNpm size={60}/></li>
       </ul>
       </div>
       </section>

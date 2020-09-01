@@ -215,8 +215,11 @@ ul.nav-list li {
   height: 550px;
   width: 100%;
   top: 550px;
-  background-color: red;
+  /* background-color: red; */
 
+}
+.btstrap{
+  width: 150px;
 }
 #aboutme{
   position: absolute;
