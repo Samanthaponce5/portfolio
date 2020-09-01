@@ -17,6 +17,7 @@ import {SiHeroku} from 'react-icons/si'
 import {SiPostgresql} from 'react-icons/si'
 import {SiVisualstudio} from 'react-icons/si'
 import {IoLogoNpm} from 'react-icons/io'
+import {IoIosArrowDropdown} from 'react-icons/io'
 export default class About extends React.Component{
 
   componentDidMount(){
@@ -39,25 +40,30 @@ export default class About extends React.Component{
 
       
         </p>
+        
       </div>
+      <a href='#secondAboutSkills'>< IoIosArrowDropdown className='arrowDown' size={60}/></a>
+
       <img className='profilePic' src={profile}/>
+      
       <section id='secondAboutSkills'>
+        <h2 className='myskillsTitle'>My skills:</h2>
        <div className='divStack'>
       <ul  className='langImgUl' >
-        <li><SiJavascript size={70}/></li>
-        <li> <FaReact size={70}/></li>
-        <li><DiHtml5 size={70}/></li>
-        <li><DiCss3 size={70}/></li>
-        <li><DiBootstrap size={70}/></li>
-        <li><DiRuby size={70}/></li>
-        <li><SiRails size={70}/></li>
-        <li><SiRedux size={70}/></li>
-        <li><FaGitAlt size={70}/></li>
-        <li><FaGithubSquare size={70}/></li>
-        <li><SiHeroku size={70}/></li>
-        <li><SiPostgresql size={70}/></li>
-        <li><SiVisualstudio size={70}/></li>
-        <li><IoLogoNpm size={70}/></li>
+        <label className='labels'>JavaScript<li><SiJavascript size={70}/></li></label>
+        <label className='labels'>ReactJS<li> <FaReact size={70}/></li></label>
+        <label className='labels'>HTML<li><DiHtml5 size={70}/></li></label>
+        <label className='labels'>CSS<li><DiCss3 size={70}/></li></label>
+        <label className='labels'>BootStrap<li><DiBootstrap size={70}/></li></label>
+        <label className='labels'>Ruby<li><DiRuby size={70}/></li></label>
+        <label className='labels'>Rails<li><SiRails size={70}/></li></label>
+        <label className='labels'>Redux<li><SiRedux size={70}/></li></label>
+        <label className='labels'>Git<li><FaGitAlt size={70}/></li></label>
+        <label className='labels'>GitHub<li><FaGithubSquare size={70}/></li></label>
+        <label className='labels'>Heroku<li><SiHeroku size={70}/></li></label>
+        <label className='labels'>PostGresSQL<li><SiPostgresql size={70}/></li></label>
+        <label className='labels'>Visualstudio<li><SiVisualstudio size={70}/></li></label>
+        <label className='labels'>NPM<li><IoLogoNpm size={70}/></li></label>
       </ul>
       </div>
       </section>

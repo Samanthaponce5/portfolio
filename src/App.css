@@ -15,6 +15,7 @@ body {
 }
 html{
   overflow-x: hidden;
+  scroll-behavior: smooth;
 
 }
 
@@ -32,7 +33,7 @@ html{
 
 
 .navbar {
-	z-index: 999;
+	z-index: 9999;
 	width: 100%;
 	height: 70px;
 	background-color: transparent;
@@ -218,9 +219,7 @@ ul.nav-list li {
   /* background-color: red; */
 
 }
-.btstrap{
-  width: 150px;
-}
+
 #aboutme{
   position: absolute;
   left: 100px;
@@ -234,7 +233,7 @@ ul.nav-list li {
 	width: 500px;
 	height: 100px;
   top: 100px;
-  left: 300px;
+  left: 500px;
  
 }
 .sentence{
@@ -258,25 +257,7 @@ p {
 }
 
 /* Images for languages */
-.langImg{
-  width: 155px;
-}
-.langImg.css{
-  position: relative;
-  width: 112px;
-}
-.langImg.js{
-  width: 170px;
-}
-.langImg.react{
-  width: 170px;
-}
-.label{
-  position: relative;
-  left: 50px;
-  font-size: 30px;
-  color: black;
-}
+
 .divStack{
 height: 650px;
 /* overflow: scroll; */
@@ -289,12 +270,39 @@ height: 650px;
   grid-template-columns: repeat(7, 1fr);
   grid-gap: 55px;
 
+}
+.labels{
+  font-size: 20px;
+}
 
+.myskillsTitle{
+  position: relative;
+  font-family: 'Londrina Shadow', cursive;
+  font-size: 45px;
+  top: -230px;
+  left: -50px;
 }
 .langImgUl li{
   margin-bottom: 50px;
 }
+.arrowDown{
+position: absolute;
+top: 550px;
+left: 210px;
+-webkit-animation: action 1s infinite  alternate;
+ animation: action .8s infinite  alternate;
+ cursor: pointer;
+ color: white;
 
+}
+@-webkit-keyframes action {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+@keyframes action {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
 li{
   list-style: none;
 }
@@ -730,12 +738,55 @@ section {
 }
 
 
+
+@media only screen and (max-width: 1158px) {
+  
+  .text-part.about{
+    left:370px ;
+  }
+}
+
+
+
 @media only screen and (max-width: 987px) {
-	.nav-listtwo {
-		left: 35%;
-	}
+  .nav-listtwo {
+    left: 35%;
+  }
+  #aboutme{
+    left: 3px;
+  }
+  .profilePic{
+    left: 3px;
+  }
+  .text-part.about{
+    left:270px ;
+  }
+  .arrowDown{
+    left: 125px;
+  }
+
+  .langImgUl{
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 50px;
+  
+  }
+
 
 }
+
+
+
+
+@media only screen and (max-width: 1072px) {
+.myskillsTitle{
+  left: 20px;
+}
+ul.langImgUl{
+  left: -55px;
+}
+}
+
+
 @media only screen and (max-width: 1035px) {
   .languages{
     right: 20%;
@@ -1003,7 +1054,38 @@ margin-bottom: 15px;
   
     }
   }
+  @media only screen and (max-width: 849px) {
+    .langImgUl{
+    
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 55px;
+  
+  }
+  
+  .arrowDown{
+  display: none;
+  }
+  #aboutme{
+    left: 250px;
+  }
+  .profilePic{
+    left: 260px;
+  }
+  .text-part.about{
+    top: 450px;
+    left: 120px;
+  }
 
+  .myskillsTitle{
+    top: 50px;
+  }
+
+  ul.langImgUl{
+    top: 460px;
+  }
+
+
+}
 
 @media only screen and (max-width: 717px) {
   .carousel-wrapper{
@@ -1032,6 +1114,22 @@ margin-bottom: 15px;
     .languages{
       right: 5%;
       width: 250px;
+    }
+
+    #aboutme{
+      left: 80px;
+    }
+    .profilePic{
+      left: 130px;
+    }
+    .text-part.about{
+      left: 30px;
+    }
+    .myskillsTitle{
+      left: 10px;
+    }
+    ul.langImgUl{
+      left: -80px;
     }
 
   }
@@ -1190,6 +1288,18 @@ textarea{
   }
 
   @media only screen and (max-width: 570px) {
+   
+    .text-part.about{
+      top: 500px;
+    }
+    .myskillsTitle{
+      top: -35px;
+     
+    }
+
+    ul.langImgUl{
+      top: 370px;
+    }
     .nameInput,.emailInput{
       width: 150px;
     
@@ -1269,6 +1379,28 @@ textarea{
           width: 350px;
         }
   }
+
+  @media only screen and (max-width: 524px) {
+
+    .langImgUl{
+    
+      grid-template-columns: repeat(3, 1fr);
+    
+    }
+    .profilePic{
+      left: 45px;
+    }
+    #aboutme{
+      font-size: 35px;
+    }
+    .text-part.about{
+      left: 0;
+    }
+    .nav-link{
+      font-size: 27px;
+    }
+  }
+
   /* Need Ipad, Ipad pro,iphone s5  */
 
 
@@ -1296,6 +1428,39 @@ textarea{
     top: 0px;
     left: 0;
   }
+#aboutme{
+  font-size: 32px;
+  left: 45px;
+  top: 45px;
+}
+
+.profilePic{
+  width: 250px;
+  left: 45px;
+  top: 105px;
+}
+.arrowDown{
+  display: none;
+}
+.text-part.about{
+  left:0;
+  top:330px ;
+  
+}
+.myskillsTitle{
+  font-size: 40px;
+  left: 125px;
+  top: -130px;
+  white-space: nowrap;
+}
+ul.langImgUl{
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 35px;
+  left: -55px;
+  top: 270px;
+
+}
+
 
  
 }
@@ -1435,6 +1600,40 @@ textarea{
       top: -100px;
 
     }
+
+    #aboutme{
+      font-size: 32px;
+      left: 55px;
+      top: 85px;
+    }
+
+    .profilePic{
+      width: 250px;
+      left: 65px;
+      top: 165px;
+    }
+    .arrowDown{
+      display: none;
+    }
+    .text-part.about{
+      left:0;
+      top:390px ;
+      
+    }
+    .myskillsTitle{
+      font-size: 40px;
+      left: 125px;
+      top: -130px;
+      white-space: nowrap;
+    }
+    ul.langImgUl{
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 35px;
+      left: -55px;
+      top: 270px;
+    
+    }
+    
   }
   @media only screen and (max-width: 361px) {
     .laguagesStacks.second{
@@ -1456,6 +1655,17 @@ textarea{
     }
     .laguagesStacks li{
       font-size: 20px;
+    }
+
+
+  
+    .myskillsTitle{
+      top: -80px;
+   
+    }
+    ul.langImgUl{
+      top: 320px;
+    
     }
     
    
@@ -1517,5 +1727,17 @@ textarea{
     .laguagesStacks.second{
       left: 100px;
       top: -120px;
+    }
+
+    #aboutme{
+      left: 15px;
+      top: 45px;
+    }
+    .profilePic{
+      top: 100px;
+      left: 25px;
+    }
+    .text-part.about{
+      top: 350px;
     }
   }
