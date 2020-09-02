@@ -1,5 +1,6 @@
 
 import React from 'react';
+import Resume from './Resume.pdf'
 import { GrLinkedinOption } from 'react-icons/gr';
 import { FiInstagram } from 'react-icons/fi';
 import { FaGithubAlt } from 'react-icons/fa';
@@ -48,7 +49,7 @@ export default class Email extends React.Component{
       <div className='text-part'>
         <h1>Contact Me</h1>
         <h2>Email:  Samanthaponce5@gmail.com</h2>
-        <h2 className='myresume'>My Resume:  <a href='https://docs.google.com/document/d/1Bx_stOFeX2983my0mq1-rZqQcQ4prJOj8ipitfZYCNw/edit'>Here</a></h2>
+        <h2 className='myresume'>My Resume:  <a href={Resume} target="_blank">Here</a></h2>
 
         <ul className="contact-listtwo" >
     <li className='contact-item two'><a href='https://www.linkedin.com/in/samantha-ponce-0bb6ba1a9/' className='nav-link2'><GrLinkedinOption size={35}/></a></li>
