@@ -52,7 +52,7 @@ import {Link} from 'react-router-dom'
     <ul className="nav-listtwo" ref={el =>navbar2=el}>
     <li className='nav-item two'><a href='https://www.linkedin.com/in/samantha-ponce-0bb6ba1a9/' className='nav-link2'><GrLinkedinOption size={24}/></a></li>
       <li className='nav-item two'><a href='https://github.com/Samanthaponce5' className='nav-link2'><FaGithubAlt size={20}/></a></li>
-      <li className='nav-item two'><a href='https://www.instagram.com/samntha_p/' className='nav-link2'><FiInstagram size={20}/></a></li>
+      <li className='nav-item two'><a href='https://www.instagram.com/samantha_pnce/' className='nav-link2'><FiInstagram size={20}/></a></li>
    
     </ul>
     
