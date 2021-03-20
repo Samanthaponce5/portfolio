@@ -22,7 +22,7 @@ export default class Projects extends React.Component{
                  <li>Ruby on Rails backend</li>
                  <li>Postgres Databse</li>
                </ul>
-                <button className='viewbtn'><a href='https://jacks-journey.herokuapp.com/'>View Site</a></button> <button className='viewbtn' ><a href='https://github.com/Samanthaponce5/thePlasticJourney-frontend'>View Code</a></button>
+                <button className='viewbtn'><a href='https://jacksjourney.netlify.app/#/'>View Site</a></button> <button className='viewbtn' ><a href='https://github.com/Samanthaponce5/thePlasticJourney-frontend'>View Code</a></button>
               </div>
               {/* <a class="arrow arrow-prev" href="#item-3"></a> */}
               <a class="arrow arrow-next" href="#item-2"></a>
